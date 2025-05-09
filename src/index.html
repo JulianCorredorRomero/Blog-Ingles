@@ -1,0 +1,71 @@
+<!doctype html>
+<html>
+<head>
+  <title>My Blog</title>
+   <!--Logo implementado al titulo de la pagina-->
+  <link rel="icon" type="image/png" href="./src/logo.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Tailwind CSS CDN-->
+  <link href="./output.css" rel="stylesheet">
+   <!--Fuentes importadas desde google fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <header>
+        <nav class="bg-black text-white p-3 flex items-center placeholder-fontFamily-inter-1">
+            <a href="/src/index.html">
+                <img class="w-[60px] ml-[30px] mr-[20px]" src="src/logo.png" alt="logo simple utilizado en el blog"> 
+            </a>
+            <div class="text-lg font-bold mr-[800px]">
+                <a href="/src/index.html">My Blog</a>
+            </div>
+            <ul class="flex space-x-4">
+                <li><a href="/src/index.html" class="hover:text-blue-600 placeholder-fontFamily-inter-1">Home</a></li>
+                <li><a href="/src/About.html" class="hover:text-blue-600 placeholder-fontFamily-inter-1">About</a></li>
+                <li><a href="/src/Contact.html" class="hover:text-blue-600 placeholder-fontFamily-inter-1">Contact</a></li>
+            </ul>
+        </nav>
+         <!--Barra de navegacion con efecto al posicionar el cursor sobre los enlaces-->
+    </header>
+    <main>
+        <img src="./src/paisaje.jpg" alt="Paisaje nocturno" class="w-full h-[550px] object-cover rounded-b-xl">
+        <div class="absolute top-[52px] w-full h-[580px] bg-black opacity-60  rounded-b-xl z-10"></div>
+         <!--Imagen y efecto utilizado para la introduccion en la pagina-->
+        <h1 class="absolute top-[100px] text-white placeholder-fontFamily-inter-1 text-[60px] ml-[380px] mt-[150px] z-20">Welcome to my Blog</h1>
+        <h2 class="absolute top-[200px] text-white placeholder-fontFamily-inter-1 text-[30px] ml-[400px] mt-[150px] z-20">Exploring life topics through language</h2>
+        <section>
+            <h3 class=" flex-auto text-center text-black text-[30px] font-bold placeholder-fontFamily-inter-1 m-6">Read about my progress in learning English.</h3>
+            <p class="flex-auto text-black text-[20px] placeholder-fontFamily-inter-1 font-semibold mr-[200px] mt-[100px] text-right">A Video Presentation About My Family and Me</p>
+        </section>
+         <!--Seccion 1, donde se haya un titulo sobre el contenido general y otro acerca del contenido de un articulo-->
+        <section class="flex items-center mt-[15px]">
+            <video class="w-[600px] h-[200px] ml-[70px] mt-[30px] rounded-xl bg-black z-20" controls>
+                <source src="src/Video_Presentacion_Familiar.mp4" type="video/mp4">
+            </video>
+            <p class="justify-center text-black text-[20px] placeholder-fontFamily-montserrat-1 ml-[70px] mr-[70px] mt-[15px]"> 
+                This article is about a video presentation.
+                In this video, I begin with a short introduction, and eventually I mention a family member. I describe, in English, their name, age, family relationship, occupation, and date of birth.
+                In the next part, I proceed to describe some of their characteristics and how I see them.
+                This activity definitely helped me practice my English, both spoken and written.
+            </p>
+        </section>
+         <!--Seccion 2 articulo 1 con pequeña descripcion y el contenido general en este caso un video-->
+            <h3 class="flex-auto text-black text-[20px] placeholder-fontFamily-inter-1 font-semibold ml-[200px] mt-[100px]">Famous Tourist Spot in Bogotá</h3>
+         <section class="flex items-center mt-[40px]">
+            <p class="justify-center text-black text-[20px] placeholder-fontFamily-montserrat-1 ml-[70px] mr-[70px] mt-[15px]"> 
+                This post is about a popular tourist destination in Bogotá: Monserrate. This place is famous for the long hike to reach the top, its breathtaking views, 
+                and the church that stands at the summit of the mountain. Visiting this site is a unique experience, whether you go on foot or use one of the available 
+                transport options. Its stories and legends make it an appealing place for both believers and non-believers.
+            </p>
+            <video class="w-[600px] h-[200px] mr-[70px] mt-[30px] rounded-xl bg-black z-20" controls>
+                <source src="src/Video_Presentacion_Familiar.mp4" type="video/mp4">
+            </video>
+        </section>
+         <!--Seccion 3 articulo 2 con pequeña descripcion y el contenido general en este caso un video(video 2)-->
+    </main>
+    <footer></footer>
+</body>
+</html>
