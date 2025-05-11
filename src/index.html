@@ -14,189 +14,142 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    <header>
-        <nav class="bg-black text-white p-3 flex items-center placeholder-fontFamily-inter-1">
-            <a href="/src/index.html">
-                <img class="w-[60px] ml-[30px] mr-[20px]" src="src/logo.png" alt="logo simple utilizado en el blog"> 
-            </a>
-            <div class="text-lg font-bold mr-[800px]">
-                <a href="/src/index.html">My Blog</a>
-            </div> 
-            <ul class="flex space-x-4">
-                <li><a href="/src/index.html" class="hover:text-blue-600 placeholder-fontFamily-inter-1">Home</a></li>
-                <li><a href="/src/About.html" class="hover:text-blue-600 placeholder-fontFamily-inter-1">About</a></li>
-                <li><a href="/src/Contact.html" class="hover:text-blue-600 placeholder-fontFamily-inter-1">Contact</a></li>
-            </ul>
-        </nav>
-         <!--Barra de navegacion con efecto al posicionar el cursor sobre los enlaces-->
+    <header class="bg-black text-white p-2 lg:p-3 flex flex-col sm:flex-row items-center sm:justify-between">
+  <!-- Logo + Título -->
+   <div class="flex items-center space-x-3">
+    <a href="/src/index.html">
+        <img class="w-8 sm:w-10 lg:w-16 mx-3 sm:mx-0" src="src/logo.png" alt="logo simple utilizado en el blog como logo personal">
+    </a>
+    <div class="font-bold text-xs sm:text-sm lg:text-base">
+        <a href="/src/index.html">My Blog</a>
+    </div>
+    </div>
+    <!-- Navegación -->
+     <nav aria-label="Main navigation" class="mt-2 sm:mt-0">
+        <ul class="flex space-x-4 font-inter font-bold text-xs sm:text-sm lg:text-base">
+            <li><a href="/src/index.html" class="hover:text-blue-600 transition-colors duration-300">Home</a></li>
+            <li><a href="/src/About.html" class="hover:text-blue-600 transition-colors duration-300">About</a></li>
+            <li><a href="/src/Contact.html" class="hover:text-blue-600 transition-colors duration-300">Contact</a></li>
+        </ul>
+    </nav>
     </header>
-    <main class="mb-[100px]">
-        <section>
-            <img src="./src/paisaje.jpg" alt="Paisaje nocturno" class="w-full h-[550px] object-cover rounded-b-xl">
-            <div class="absolute top-[52px] w-full h-[580px] bg-black opacity-60  rounded-b-xl z-10"></div>
-            <!--Imagen y efecto utilizado para la introduccion en la pagina-->
-            <h1 class="absolute top-[100px] text-white placeholder-fontFamily-inter-1 text-[60px] ml-[380px] mt-[150px] z-20">Welcome to my Blog</h1>
-            <h2 class="absolute top-[200px] text-white placeholder-fontFamily-inter-1 text-[30px] ml-[400px] mt-[150px] z-20">Exploring life topics through language</h2>
-            <h3 class=" flex-auto text-center text-black text-[30px] font-bold placeholder-fontFamily-inter-1 mt-[60px]">Read about my progress in learning English.</h3>
-            <p class="flex-auto text-black text-[20px] placeholder-fontFamily-inter-1 font-bold mr-[130px] mt-[100px] text-right">A Video Presentation About My Family and Me</p>
+    <main class="mb-10">
+        <section class="relative max-w-screen-2xl text-xs md:text-sm lg:text-base">
+            <img src="./src/paisaje.jpg" alt="Paisaje nocturno visto desde un mirador" class="w-full h-full rounded-b-xl z-0">
+            <h1 class="absolute text-center top-24 text-white font-inter z-20 text-4xl md:text-5xl lg:text-6xl my-40 mx-96">Welcome to my Blog</h1>
+            <h2 class="absolute text-center top-48 text-white font-inter z-20 text-xl md:text-2xl lg:text-3xl my-[12rem] mx-[400px]">Exploring life topics through language</h2>
+            <h3 class="flex-auto text-center text-black text-3xl font-bold font-inter my-20">Read about my progress in learning English.</h3>
+            <p class="text-black text-sm md:text-base lg:text-lg font-inter font-bold my-14 mx-24">A Video Presentation About My Family and Me</p>
         </section>
-         <!--Seccion 1, donde se haya un titulo sobre el contenido general y otro acerca del contenido de un articulo-->
-        <section class="flex items-center mt-[15px]">
-            <video class="w-[600px] h-[300px] ml-[70px] rounded-xl bg-black z-20" controls>
+        <section class="flex items-center text-black text-xs md:text-sm lg:text-base font-montserrat mx-5">
+            <video class="max-w-screen-sm max-h-60 mx-16 rounded-xl bg-black z-20" controls>
                 <source src="src/Presentacion.mp4" type="video/mp4">
             </video>
-            <!--Video donde se presenta a un familiar-->
-            <p class="justify-center text-black text-[16px] placeholder-fontFamily-montserrat-1 ml-[70px] mr-[70px] mt-[15px]"> 
-                This article is about a video presentation.
-                In this video, I begin with a short introduction, and eventually I mention a family member. I describe, in English, their name, age, family relationship, occupation, and date of birth.
-                In the next part, I proceed to describe some of their characteristics and how I see them.
-                This activity definitely helped me practice my English, both spoken and written.
+            <p class="justify-center mx-16 my-2"> 
+                This article is about a video presentation. In this video, I begin with a short introduction, and eventually I mention a family member. I describe, in English, their name, age, family relationship, occupation, and date of birth. In the next part, I proceed to describe some of their characteristics and how I see them. This activity definitely helped me practice my English, both spoken and written.
             </p>
-            <!--Texto donde se describe brevemente la tematica del video junto con alguna reflexion o perspectiva personal-->
         </section>
-         <!--Seccion 2 articulo 1 con pequeña descripcion y el contenido general en este caso un video-->
-            <h3 class="flex-auto text-black text-[20px] placeholder-fontFamily-inter-1 font-bold ml-[200px] mt-[100px]">Famous Tourist Spot in Bogotá</h3>
-            <!--Titulo de la seccion 2-->
-         <section class="flex items-center mt-[40px]">
-            <p class="justify-center text-black text-[16px] placeholder-fontFamily-montserrat-1 ml-[70px] mr-[70px] mt-[15px]"> 
-                This post is about a popular tourist destination in Bogotá: Monserrate. This place is famous for the long hike to reach the top, its breathtaking views, 
-                and the church that stands at the summit of the mountain. Visiting this site is a unique experience, whether you go on foot or use one of the available 
-                transport options. Its stories and legends make it an appealing place for both believers and non-believers.
+        <h3 class="text-black text-sm md:text-base lg:text-lg font-inter font-bold my-14 mx-24">Famous Tourist Spot in Bogotá</h3>
+        <section class="flex items-center text-black text-xs md:text-sm lg:text-base font-montserrat mx-5">
+            <p class="justify-center mx-16 my-2"> 
+                This post is about a popular tourist destination in Bogotá: Monserrate. This place is famous for the long hike to reach the top, its breathtaking views, and the church that stands at the summit of the mountain. Visiting this site is a unique experience, whether you go on foot or use one of the available transport options. Its stories and legends make it an appealing place for both believers and non-believers.
             </p>
-            <!--Texto donde se describe brevemente la tematica del video junto con alguna reflexion o perspectiva personal-->
-            <video class="w-[600px] h-[300px] mr-[70px] rounded-xl bg-black z-20" controls >
+            <video class="max-w-screen-sm max-h-60 mx-16 rounded-xl bg-black z-20" controls>
                 <source src="src/Turismo.mp4" type="video/mp4">
             </video>
-            <!--Video donde se describe un lugar turistico de bogota, junto con detalles que me parecen atractivos-->
         </section>
-         <!--Seccion 3 articulo 2 con pequeña descripcion y el contenido general en este caso un video(video 2)-->
-            <h3 class="flex-auto text-black text-[20px] placeholder-fontFamily-inter-1 font-bold mr-[200px] mt-[100px] text-right">Famous Tourist Spot in Bogotá</h3>
-        <!--Titulo seccion 3 -->
-         <section class="flex items-center mt-[40px]">
-             <video class="w-[600px] h-[300px] ml-[70px] rounded-xl bg-black z-20" controls>
-                <source src="src/entrevista.mp4" type="video/mp4" >
+        <h3 class="text-black text-sm md:text-base lg:text-lg font-inter font-bold my-14 mx-24">Professional Interview in English</h3>
+        <section class="flex items-center text-black text-xs md:text-sm lg:text-base font-montserrat mx-5">
+            <video class="max-w-screen-sm max-h-60 mx-16 rounded-xl bg-black z-20" controls>
+                <source src="src/entrevista.mp4" type="video/mp4">
             </video>
-            <!--Video acerca de una entrevista en ingles-->
-            <p class="justify-center text-black text-[16px] placeholder-fontFamily-montserrat-1 ml-[70px] mr-[70px] mt-[15px]"> 
-                In this entry, I share a simple yet valuable exercise: recording a mock interview entirely in English.
-                The goal was to simulate a real-life job interview scenario, where I respond to common questions about my education, interests, and professional aspirations. This type of practice not only helps strengthen speaking and listening skills, but also builds the confidence needed to communicate fluently in formal situations.
-                While the video is unscripted and imperfect, it reflects my current level and progress. Every mistake is a lesson, and every attempt brings me closer to mastery.
-                Check out the video below—and feel free to share your feedback!
+            <p class="justify-center mx-16 my-2"> 
+                In this entry, I share a simple yet valuable exercise: recording a mock interview entirely in English. The goal was to simulate a real-life job interview scenario, where I respond to common questions about my education, interests, and professional aspirations. This type of practice not only helps strengthen speaking and listening skills, but also builds the confidence needed to communicate fluently in formal situations. While the video is unscripted and imperfect, it reflects my current level and progress. Every mistake is a lesson, and every attempt brings me closer to mastery.
             </p>
-            <!--Texto donde se describe esta experiencia y como mejoro mi uso del lenguaje-->
         </section>
-        <!--Seccion 4 articulo 3 con pequeña descripcion y el contenido general en este caso un video(video 3)-->
-              <h3 class="flex-auto text-black text-[20px] placeholder-fontFamily-inter-1 font-bold ml-[70px] mt-[100px]">My Academic and Work Journey: Experiences, Goals, and Solutions</h3>
-        <section class="flex items-center mt-[60px]">
-            <p class="justify-center text-black text-[16px] placeholder-fontFamily-montserrat-1 ml-[70px] mt-[15px] mr-[70px]"> 
-                In this article, I share an audio where I reflect on my academic and professional journey. I talk about my transition from high school to SENA, 
-                my experience in self-learning, and my first job, which taught me the value of hard work. I also explain my current actions to grow
-                 as a programmer and data analyst, and how I plan to overcome future challenges through discipline, adaptability, 
-                 and problem-solving. This audio offers a glimpse into my mindset and commitment to continuous improvement.
+        <h3 class="text-black text-sm md:text-base lg:text-lg font-inter font-bold my-14 mx-24">My Academic and Work Journey: Experiences, Goals, and Solutions</h3>
+        <section class="flex items-center text-black text-xs md:text-sm lg:text-base font-montserrat mx-5">
+            <p class="justify-center mx-16 my-2"> 
+                In this article, I share an audio where I reflect on my academic and professional journey. I talk about my transition from high school to SENA, my experience in self-learning, and my first job, which taught me the value of hard work. I also explain my current actions to grow as a programmer and data analyst, and how I plan to overcome future challenges through discipline, adaptability, and problem-solving. This audio offers a glimpse into my mindset and commitment to continuous improvement.
             </p>
-            <!--Texto donde se describe brevemente la tematica del audio junto con alguna reflexion o perspectiva personal-->
-            <audio class="w-[2300px] mr-[70px]" src="src/Audio 2.m4a" controls>         
-            </audio>
-            <!--Audio donde se practica el idioma-->
-            <!--Audio donde se habla de un compromiso academico y profesional-->   
+            <audio class="flex-1 min-w-[300px] max-w-screen-xl mx-16" src="src/Audio 2.m4a" controls></audio>
         </section>
-         <!--Seccion 5 articulo 4 con pequeña descripcion y el contenido general en este caso un audio(audio 1)-->
-        <h3 class=" text-black text-[20px] placeholder-fontFamily-inter-1 font-bold ml-[580px] mt-[100px]">Academic and Professional: Reflections from a Student in Training</h3>
-        <section class="flex items-center mt-[60px]">
-            <audio class="w-[2000px] ml-[70px]" src="src/Audio 1.mp3" controls>         
-            </audio>
-            <!--Audio donde se practica el idioma-->
-            <!--Audio donde se habla de un compromiso academico y profesional-->   
-            <p class="justify-center text-black text-[16px] placeholder-fontFamily-montserrat-1 ml-[70px] mt-[10px] mr-[70px]"> 
-                In this article, I share an audio where I talk about my beliefs, attitudes, and obligations in both academic and work contexts. In this post, you can 
-                listen to how I approach topics such as responsibility, discipline, active participation, teamwork, and adaptability to
-                change. I aim to offer a clear perspective on what it means to grow both personally and professionally. I hope it 
-                serves as inspiration for others on their own learning journey.
+        <h3 class="text-black text-sm md:text-base lg:text-lg font-inter font-bold my-14 mx-24">Academic and Professional: Reflections from a Student in Training</h3>
+        <section class="flex items-center text-black text-xs md:text-sm lg:text-base font-montserrat mx-5">
+            <audio class="flex-1 min-w-[300px] max-w-screen-xl mx-16" src="src/Audio 1.mp3" controls></audio>
+            <p class="justify-center mx-16 my-2"> 
+                In this article, I share an audio where I talk about my beliefs, attitudes, and obligations in both academic and work contexts. In this post, you can listen to how I approach topics such as responsibility, discipline, active participation, teamwork, and adaptability to change. I aim to offer a clear perspective on what it means to grow both personally and professionally. I hope it serves as inspiration for others on their own learning journey.
             </p>
-            <!--Texto donde se describe brevemente la tematica del audio junto con alguna reflexion o perspectiva personal-->
         </section>
-         <!--Seccion 6 articulo 5 con pequeña descripcion y el contenido general en este caso un audio(audio 2)-->
-        <h3 class="flex-auto text-black text-[20px] placeholder-fontFamily-inter-1 font-bold ml-[70px] mt-[100px]">Critical Thinking and Media Literacy</h3>
-        <section class="flex items-center mt-[10px]">
-            <p class="justify-center text-black text-[16px] placeholder-fontFamily-montserrat-1 ml-[70px] mt-[10px] mr-[70px]"> 
-                In today’s world, we receive a lot of information every day — on TV, social media, and the internet. That’s why I believe critical thinking 
-                and media literacy are very important skills.For me, critical thinking means not accepting everything as true. I try to ask questions like: 
-                Who is saying this? Why are they saying it? Is there evidence? This helps me to avoid fake news and make better decisions.
-                Media literacy is also important because it helps me understand how media works. Sometimes, media shows only one side of the story or tries to make us 
-                feel emotions to sell something or change our opinion. With media literacy, I can see these tricks and think for myself.
-                In conclusion, these skills help me to be more careful, more curious, and more independent when I read or watch something. I don’t believe everything. I think first.
+        <h3 class="text-black text-sm md:text-base lg:text-lg font-inter font-bold my-14 mx-24">Critical Thinking and Media Literacy</h3>
+        <section class="flex items-center text-black text-xs md:text-sm lg:text-base font-montserrat mx-5">
+            <p class="justify-center mx-20 my-2"> 
+                In today’s world, we receive a lot of information every day — on TV, social media, and the internet. That’s why I believe critical thinking and media literacy are very important skills. For me, critical thinking means not accepting everything as true. I try to ask questions like: Who is saying this? Why are they saying it? Is there evidence? This helps me to avoid fake news and make better decisions. Media literacy is also important because it helps me understand how media works. Sometimes, media shows only one side of the story or tries to make us feel emotions to sell something or change our opinion. With media literacy, I can see these tricks and think for myself. In conclusion, these skills help me to be more careful, more curious, and more independent when I read or watch something. I don’t believe everything. I think first.
             </p>
-            <!--Texto donde se habla del pensamiento critico en internet desde un punto personal-->
-            <img class="w-[600px] h-[300px] mr-[70px] rounded-xl bg-black z-20" src="src/pensamiento.png" alt="Imagen de un video">
-            <!--Imagen representativa del pensamiento critico-->
+            <img class="max-w-screen-sm max-h-96 mx-16 rounded-xl bg-black z-20" src="src/pensamiento.png" alt="Imagen representativa del pensamiento crítico con texto y gráficos">
         </section>
-        <!--Seccion 7 articulo 6 con pequeña descripcion y el contenido general en este caso una imagen y tema concretos-->
-        <h3 class=" text-black text-[20px] placeholder-fontFamily-inter-1 font-bold ml-[460px] mt-[100px]">Crime and Punishment</h3>
-        <section class="flex items-center mt-[20px]">
-            <img src="src/crimen.png" alt="imagen de 3 personas en un callejon con tematica devastada" class="w-[600px] h-[320px] ml-[70px] rounded-xl bg-black z-20">
-            <!--Imagen representativa del crimen y el castigo--> 
-            <p class="justify-center text-black text-[16px] placeholder-fontFamily-montserrat-1 ml-[70px] mt-[10px] mr-[70px]"> 
-                I believe that crime and punishment are not just about laws. They are also about people, choices, and consequences.Sometimes, people make bad decisions 
-                because they are in a difficult situation. That doesn’t make the crime right, but it makes me think more deeply.Should we punish or help them Punishment is 
-                important to protect society, but I also think people can learn and change. For example, education in prison can help someone become a better person after making a mistake.
-                In my opinion, the best justice is not only punishment — it is also giving a chance to start again.
+        <h3 class="text-black text-sm md:text-base lg:text-lg font-inter font-bold my-14 mx-24">Crime and Punishment</h3>
+        <section class="flex items-center text-black text-xs md:text-sm lg:text-base font-montserrat mx-5">
+            <img src="src/crimen.png" alt="Imagen representativa del crimen y el castigo con tres personas en un callejón" class="max-w-screen-sm max-h-96 mx-16 rounded-xl bg-black z-20">
+            <p class="justify-center mx-12 my-2"> 
+                I believe that crime and punishment are not just about laws. They are also about people, choices, and consequences. Sometimes, people make bad decisions because they are in a difficult situation. That doesn’t make the crime right, but it makes me think more deeply. Should we punish or help them? Punishment is important to protect society, but I also think people can learn and change. For example, education in prison can help someone become a better person after making a mistake. In my opinion, the best justice is not only punishment — it is also giving a chance to start again.
             </p>
-            <!--Texto donde se dice una opinion personal del crimen y castigo-->
         </section>
-         <!--Seccion 8 articulo 7 con pequeña opinion personal y el contenido general en este caso una imagen-->
     </main>
-    <footer class="bg-black flex text-white box-border">
-        <div class="p-10">
-            <img src="src/logo.png" alt="logo de la pagina web" class="mr-5 p-8 h-[150px] w-[150px]">
-            <!--Logo de la pagina implementado al footer para hacerlo mas amigable a la vista-->
-        <p class="ml-7 w-[345px] mb-[50px] mt-[20px] text-[16px] font-[500]">
-            All rights reserved.
-            This website and its contents were created as part of a personal development project. Visual elements and logos used are royalty-free and credited to their respective authors when required.
-            The design, structure, and customizations reflect the personal learning process and creative intent of the author.
-            No commercial use is intended.
-            © 2025 Julian Corredor
-        </p>
-        <!--Derechos reservados del blog, donde se da el respectivo credito a los autorees de las imagenes implementadas en este-->
-        <p class="ml-7 w-[345px] mb-[20px] mt-[20px] text-[16px] font-[500]">
-            Julian Corredor. Personal software development project.
-            Contact number: +57 321 420 0686
-            Based in Bogotá, Colombia (Suba, Aures II).
-            This project is an individual initiative created for educational and non-commercial purposes. All visual elements used are royalty-free and credited accordingly.     
-        </p>
-        <!--Informacion del creador del blog-->
+    <footer class="bg-black flex text-white box-border border-t-2 border-blue-800">
+        <div class="container mx-auto flex flex-wrap px-10 py-10">
+            <div class="px-10 mx-10 py-10 max-w-screen-lg text-xs md:text-sm lg:text-base font-semibold">
+                <h2 class="mx-2 my-8">About</h2>
+                <nav>
+                    <ul class="flex flex-col mx-4 my-4 gap-4">
+                        <li><a href="sobre_nosotros.html" class="hover:text-blue-600 transition-colors duration-300">Studies</a></li>
+                        <li><a href="sobre_nosotros.html" class="hover:text-blue-600 transition-colors duration-300">Employment</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Un nav simple para enlazar cosas de mi como mis estudios y experiencias en empleos-->
+            <div class="px-10 mx-10 py-10 max-w-screen-lg text-xs md:text-sm lg:text-base font-semibold">
+                <h2 class="mx-2 my-8">Help</h2>
+                <nav>
+                    <ul class="flex flex-col mx-4 my-4 gap-4">
+                        <li><a href="sobre_nosotros.html" class="hover:text-blue-600 transition-colors duration-300">Blog Guide</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Ayuda a los usuarios a entender como usar el blog y como esta hecho-->
+            <div class="px-10 mx-10 py-10 max-w-screen-lg text-xs md:text-sm lg:text-base font-semibold">
+                <h2 class="mx-2 my-8">Useful Links</h2>
+                <nav>
+                    <ul class="flex flex-col mx-4 my-4 gap-4">
+                        <li><a href="sobre_nosotros.html" class="hover:text-blue-600 transition-colors duration-300">Legal Terms and Privacy Information</a></li>
+                        <li><a href="sobre_nosotros.html" class="hover:text-blue-600 transition-colors duration-300">Privacy Policy</a></li>
+                        <li><a href="sobre_nosotros.html" class="hover:text-blue-600 transition-colors duration-300">Cookie Policy</a></li>
+                        <li><a href="sobre_nosotros.html" class="hover:text-blue-600 transition-colors duration-300">Corporate Governance</a></li>
+                        <li><a href="sobre_nosotros.html" class="hover:text-blue-600 transition-colors duration-300">Site Terms and Conditions</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <!--Politicas generales-->
+            <div class="px-10 mx-10 py-10 max-w-screen-lg">
+                <img src="src/logo.png" alt="Julian Corredor personal project logo" class="mx-2 px-2 max-h-32 max-w-screen-sm">
+                <!--Logo de la pagina implementado al footer para hacerlo mas amigable a la vista-->
+                <p class="mx-4 my-4 text-xs md:text-sm lg:text-base font-semibold gap-4">
+                    All rights reserved.
+                    This website and its contents were created as part of a personal development project. Visual elements and logos used are royalty-free and credited to their respective authors when required.
+                    The design, structure, and customizations reflect the personal learning process and creative intent of the author.
+                    No commercial use is intended.
+                    © 2025 Julian Corredor
+                </p>
+                <!--Derechos reservados del blog, donde se da el respectivo credito a los autorees de las imagenes implementadas en este-->
+                <address class=" not-italic mx-4 my-4 text-xs md:text-sm lg:text-base font-semibold gap-4">
+                    Julian Corredor. Personal software development project.
+                    Contact number: +57 321 420 0686
+                    Based in Bogotá, Colombia (Suba, Aures II).
+                    This project is an individual initiative created for educational and non-commercial purposes. All visual elements used are royalty-free and credited accordingly.     
+                </address>
+                <!--Informacion del creador del blog-->
+            </div>
         </div>
-        <div class="pt-20 ml-[200px] ">
-            <h2 class="text-[20px] w-[40px] font-[700] mb-[20px]">About</h2>
-            <nav>
-                <ul class="flex flex-col gap-4 text-[16px] w-[40px] font-[500]">
-                    <li><a href="sobre_nosotros.html" class="hover:text-blue-600">Studies</a></li>
-                    <li><a href="sobre_nosotros.html" class="hover:text-blue-600">Employment</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!--Un nav simple para enlazar cosas de mi como mis estudios y experiencias en empleos-->
-        <div class="pt-20 ml-[120px]">
-            <h2 class="text-[20px] w-[40px] font-[700] mb-[20px]">Help</h2>
-            <nav>
-                <ul class="flex flex-col gap-4 text-[16px] w-[100px] font-[500]">
-                    <li><a href="sobre_nosotros.html" class="hover:text-blue-600">Blog Guide</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!--Ayuda a los usuarios a entender como usar el blog y como esta hecho-->
-        <div class="pt-20 ml-[120px]">
-            <h2 class="text-[20px] w-[200px] font-[700] mb-[20px]">Useful Links</h2>
-            <nav>
-                <ul class="flex flex-col gap-4 text-[16px] w-[180px] font-[500]">
-                    <li><a href="sobre_nosotros.html" class="hover:text-blue-600">Legal Terms and Privacy Information</a></li>
-                    <li><a href="sobre_nosotros.html" class="hover:text-blue-600">Privacy Policy</a></li>
-                    <li><a href="sobre_nosotros.html" class="hover:text-blue-600">Cookie Policy</a></li>
-                    <li><a href="sobre_nosotros.html" class="hover:text-blue-600">Corporate Governance</a></li>
-                    <li><a href="sobre_nosotros.html" class="hover:text-blue-600">Site Terms and Conditions</a></li>
-                </ul>
-            </nav>
-        </div>
-        <!--Politicas generales-->
     </footer>
     <!--Todo lo presentado en footer esta puesto en barras de nav ya que redirigen a otras paginas elaboradas por el mismo autor-->
 </body>

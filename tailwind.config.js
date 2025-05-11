@@ -3,6 +3,10 @@
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily: {
+            inter: ['Inter', 'sans-serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+    },
       colors: {
         purple_dark: '#4B0082',
         purple_light: '#E6E6FA',
@@ -22,10 +26,6 @@
         gray_light: '#D3D3D3',
         brown_dark: '#8B4513',
         brown_light: '#D2B48C',
-      fontFamily: {
-            inter: ['Inter', 'sans-serif'],
-            montserrat: ['Montserrat', 'sans-serif'],
-    },
     },	
   },
   plugins: [],
