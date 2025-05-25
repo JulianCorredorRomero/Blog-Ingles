@@ -74,6 +74,14 @@ Cada número representa avances o correcciones según el impacto o cantidad de i
 - **V2.1.3.1**
   - Ajuste mínimo: eliminación de `"./"` en rutas que causaban conflictos.
 
+-**V2.1.4
+  -Se empieza a documentar en el README el historia de versiones con sus caracteristicas y cambios
+
+-**V2.2 
+  -Se implementa un diseño responsive para dispositivos con pantallas de 680px
+  -Se implementa una mejora en diseños para pantallas de mas de 1250px 
+-**V2.2.1
+  -Correccion de tamaños en textos, videos, imagenes y audios para pantallas de 680px
 ---
 
 ## 📜 Licencia
